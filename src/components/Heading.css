@@ -1,0 +1,118 @@
+.heading {
+    text-align: center;
+}
+
+.title {
+    padding: 1rem;
+    border-radius: 50px;
+    background: #212121;
+    box-shadow:  20px 20px 65px #121212,
+                 -20px -20px 65px #303030;
+    text-align: center;
+    width: 80%;
+    max-width: 550px;
+    margin: 30vh auto auto;
+}
+
+h1 {
+    padding: 0;
+    margin: 30px auto 25px;
+    font-size: 4rem;
+    font-weight: 300;
+
+    background-image: linear-gradient(to right, #54dceb, #94adff, #e88aff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    background-position: -200%;
+    animation: animatedText 2s infinite alternate-reverse;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.arrow {
+    animation: button-lower 500ms linear;
+    transition: transform 500ms linear;
+    text-align: center;
+    border-radius: 50px;
+    background: #212121;
+    box-shadow: inset 8px 8px 16px #16161691,
+                inset -8px -8px 16px #2c2c2c85;
+    display: inline-block;
+    cursor: pointer;
+    padding: 18px 20px;
+    margin: 20vh auto;
+}
+
+.arrow:hover {
+    animation: button-rise 500ms linear forwards;
+    transform: scale(1.1);
+}
+
+.scroll-down-icon {
+    color: rgb(185, 185, 185);
+    margin-top: 20px;
+}
+
+@keyframes animatedText {
+    from {
+      background-position: 0%
+    }
+  
+    to {
+      background-position: 100%
+    }
+  }
+
+@keyframes button-rise {
+    0% {
+        background: #212121;
+        box-shadow: 0 0 0 #00000000,
+                    0 0 0 #00000000, 
+                    inset 8px 8px 16px #161616,
+                    inset -8px -8px 16px #2c2c2c;
+    }
+    50% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0),
+                    0 0 0 rgba(0, 0, 0, 0), 
+                    inset 0 0 0 #16161600,
+                    inset 0 0 0 #2c2c2c00;
+    }
+    100% {
+        background: #313131;
+        box-shadow:  8px 8px 16px #161616,
+                    -8px -8px 16px #2c2c2c,
+                    inset 0 0 0 rgba(0, 0, 0, 0),
+                    inset 0 0 0 rgba(0, 0, 0, 0);
+
+    }
+}
+
+@keyframes button-lower {
+    100% {
+        background: #212121;
+        box-shadow: 0 0 0 #00000000,
+                    0 0 0 #00000000, 
+                    inset 8px 8px 16px #161616,
+                    inset -8px -8px 16px #2c2c2c;
+    }
+    50% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0),
+                    0 0 0 rgba(0, 0, 0, 0), 
+                    inset 0 0 0 #16161600,
+                    inset 0 0 0 #2c2c2c00;
+    }
+    0% {
+        background: #313131;
+        box-shadow:  8px 8px 16px #161616,
+                    -8px -8px 16px #2c2c2c,
+                    inset 0 0 0 rgba(0, 0, 0, 0),
+                    inset 0 0 0 rgba(0, 0, 0, 0);
+
+    }
+}

@@ -1,11 +1,9 @@
-import React from "react"
-
-import Card from "./components/Card"
+import Heading from "./components/Heading"
 
 function App() {
   return (
     <div className="App">
-      
+      <Heading />
     </div>
   );
 }
